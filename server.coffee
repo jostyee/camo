@@ -16,8 +16,8 @@ camo_hostname   = process.env.CAMO_HOSTNAME        || "unknown"
 socket_timeout  = process.env.CAMO_SOCKET_TIMEOUT  || 10
 logging_enabled = process.env.CAMO_LOGGING_ENABLED || "disabled"
 keep_alive = process.env.CAMO_KEEP_ALIVE || "false"
-http_proxy      = process.env.http_proxy || "false"
-https_proxy     = process.env.https_proxy || http_proxy
+http_proxy      = process.env.HTTP_PROXY || "false"
+https_proxy     = process.env.HTTPS_PROXY || http_proxy
 
 content_length_limit = parseInt(process.env.CAMO_LENGTH_LIMIT || 5242880, 10)
 
