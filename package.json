@@ -1,7 +1,10 @@
 {
   "name": "camo",
   "version": "2.3.0",
-  "dependencies": {},
+  "dependencies": {
+    "http-proxy-agent": "^2.1.0",
+    "https-proxy-agent": "^2.2.1"
+  },
   "engines": {
     "node": "^6.11.1"
   },
