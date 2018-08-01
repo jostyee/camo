@@ -92,7 +92,7 @@ process_url = (url, transferredHeaders, resp, remaining_redirects) ->
       requestOptions['agent'] = false
 
     if url.protocol is 'https:' && https_proxy
-      requestOptions['agent'] = false	      requestOptions['agent'] = new HttpsProxyAgent(https_proxy)
+      requestOptions['agent'] = new HttpsProxyAgent(https_proxy)
     else if url.protocol is 'http:' && http_proxy
       requestOptions['agent'] = new HttpProxyAgent(http_proxy)
     else
